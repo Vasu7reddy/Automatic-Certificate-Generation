@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "lucida calligraphy italic";
+  src: url("file:///home/sudharshan/Desktop/playground/python/html_to_pdf/assets/lucida calligraphy italic.ttf"); }
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 0;
+  min-height: 970px;
+  height: 970px;
+  min-width: 1000px;
+  border: 10px solid black; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  padding: 16px;
+  position: relative;
+  height: 100%; }
+  .container-header {
+    display: flex;
+    align-items: center; }
+    .container-header .image-left, .container-header .image-right {
+      max-width: 200px; }
+      .container-header .image-left img, .container-header .image-right img {
+        height: auto;
+        max-width: 200px; }
+    .container-header .header-content {
+      flex-grow: 1;
+      text-align: center; }
+      .container-header .header-content__title {
+        font-size: 48px;
+        margin: 16px 0;
+        color: darkslateblue; }
+      .container-header .header-content__department {
+        font-size: 32px;
+        margin: 0;
+        margin-bottom: 16px;
+        color: darkorchid; }
+      .container-header .header-content__address {
+        font-size: 16px; }
+  .container .event-image-wrapper {
+    width: 100%; }
+    .container .event-image-wrapper .event-image {
+      margin: 16px auto;
+      max-width: 300px; }
+      .container .event-image-wrapper .event-image img {
+        max-width: inherit;
+        height: auto; }
+  .container .certificate-content .content > p {
+    display: flex;
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: "lucida calligraphy italic";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #111; }
+    .container .certificate-content .content > p .underline {
+      flex-grow: 1;
+      text-align: center;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      border-bottom: 5px dashed #111;
+      min-width: 210px; }
+      .container .certificate-content .content > p .underline__name {
+        width: 650px; }
+    .container .certificate-content .content > p:last-child > .underline {
+      flex-grow: 0; }
+  .container .signature-content {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+    display: flex;
+    justify-content: space-between; }
+    .container .signature-content .signature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container .signature-content .signature-item__name {
+        margin: 0;
+        margin-top: 8px;
+        font-size: 24px;
+        font-weight: 800; }
+      .container .signature-content .signature-item__image {
+        height: 75px;
+        width: auto; }
+
+/*# sourceMappingURL=main.css.map */
