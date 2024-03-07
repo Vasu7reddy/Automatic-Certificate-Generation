@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "lucida calligraphy italic";
+    src: url("file:///home/sudharshan/Desktop/playground/python/html_to_pdf/assets/lucida calligraphy italic.ttf");
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    min-height: 970px;
+    height: 970px;
+    min-width: 1000px;
+    border: 10px solid black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 16px;
+    position: relative;
+    height: 100%;
+    &-header{
+        display: flex;
+        align-items: center;
+
+        .image-left, .image-right{
+            max-width: 200px;
+
+            & img{
+                height: auto;
+                max-width: 200px;
+            }
+        }
+
+        .header-content{
+            flex-grow: 1;
+            text-align: center;
+            &__title{
+                font-size: 48px;
+                margin: 16px 0;
+                color: darkslateblue;
+            }
+    
+            &__department{
+                font-size: 32px;
+                margin: 0;
+                margin-bottom: 16px;
+                color: darkorchid;
+            }
+    
+            &__address{
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .event-image-wrapper{
+        width: 100%;
+
+        & .event-image{
+            margin: 16px auto;
+            max-width: 300px;
+    
+            & img{
+                max-width: inherit;
+                height: auto;
+            }
+        }
+    }
+
+    & .certificate-content{
+        .content > p{
+            display: flex;
+            margin: 0;
+            margin-bottom: 16px;
+            font-family: "lucida calligraphy italic";
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 60px;
+            color: #111;
+
+            & .underline{
+                flex-grow: 1;
+                text-align: center;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                border-bottom: 5px dashed #111;
+                min-width: 210px;
+
+                &__name{
+                    width: 650px;
+                }
+
+            }
+            
+            &:last-child > .underline{
+                flex-grow: 0;
+            }
+        }
+    }
+
+    & .signature-content{
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        & .signature-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__name{
+                margin: 0;
+                margin-top: 8px;
+                font-size: 24px;
+                font-weight: 800;    
+            }
+
+            &__image{
+                height: 75px;
+                width: auto;
+            }
+        }
+    }
+}
